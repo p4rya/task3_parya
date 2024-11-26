@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "vazir";
+    src: url(../src/fonts/webfonts/Vazirmatn-RD-FD-Regular.woff2);
+    
+}
+body{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    font-family: "vazir";
+    overflow-x: hidden;
+    background-color:#000B58;
+}  
+.header{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-inline: 2%;
+    justify-content: space-between;
+    background-color: lightblue;
+}
+.navbar{
+    width:300px;
+}
+.navbar ul{
+    margin-right: 10px;
+    display: flex;
+    gap: 3px;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+
+}
+
+#hamburgurMenu{
+    display: none;
+}
+#logo{
+    display: flex;
+    padding-left: 2%;
+}
+.btn{
+
+    width: 10rem;
+    height: 3rem;
+    font-size: large;
+    background-color: aliceblue;
+    margin-top: 10rem;
+    margin-right: 35rem;
+    margin-left: 10rem;
+    color: darkblue;
+    box-shadow: 5px 5px 5px  #959899;
+    transition: font-size 2s ease;
+
+}
+.btn:hover{
+    font-size: medium;
+    cursor: pointer;
+    background-color: #5f5d5d;
+    color: antiquewhite;
+    border: 2px solid darkblue;
+    
+
+}
+
+.div1{
+    margin-right: 100%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #FFE3E3;
+    animation-name: mymove;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+
+}
+
+
+@keyframes mymove{
+    
+    from{
+         left: 0;
+     }
+    to {
+         left: 100rem;
+      }
+    
+
+}
+
+@media (max-width:600px) {
+    #logo{
+        display: none;
+    }
+    .navbar ul{
+        display: none;
+    }
+    #hamburgurMenu{
+        display: flex;
+    }
+    .btn{
+        
+        margin-right: 7rem;
+    }
+    
+}
