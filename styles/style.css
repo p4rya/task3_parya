@@ -89,9 +89,11 @@ body{
     
     from{
          left: 0;
+         background-color: aqua;
      }
     to {
          left: 100rem;
+         background-color: brown;
       }
     
 
